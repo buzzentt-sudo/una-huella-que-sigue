@@ -1,0 +1,8 @@
+# robots.txt — Una huella que sigue
+# Proyecto escolar de 5.º B, Escuela N.º 15 Claudio Lepratti.
+# Sitio estático de contenido público: se permite su indexación y su archivado.
+
+User-agent: *
+Allow: /
+
+# No hay secciones privadas ni rutas de administración.

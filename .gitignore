@@ -1,0 +1,32 @@
+# Dependencias y build
+node_modules/
+dist/
+.vercel/
+
+# Entornos y credenciales — nunca deben subirse
+.env
+.env.*
+*.env.local
+*.pem
+*.key
+*.p12
+*.crt
+secrets.*
+credentials.*
+.auth.json
+
+# Editor y sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Archivos temporales de trabajo
+__test.html
+*.tmp
