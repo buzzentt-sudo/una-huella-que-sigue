@@ -324,6 +324,8 @@ body.menu-open{overflow:hidden}
 }
 .fig__frame img,.band__frame img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
 .fig--tall .fig__frame{aspect-ratio:4/5}
+.fig--wide{max-width:min(100%,980px);margin-inline:auto;margin-block:clamp(1.6rem,3.5vw,2.6rem)}
+.fig--wide figcaption{max-width:82ch}
 .fig:hover .fig__frame img{transform:scale(1.03)}
 figcaption{
   margin-top:.85rem;font-size:.8rem;line-height:1.62;color:var(--tinta-2);
