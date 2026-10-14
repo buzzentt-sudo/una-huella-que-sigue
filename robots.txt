@@ -5,4 +5,7 @@
 User-agent: *
 Allow: /
 
+# Mapa del sitio
+Sitemap: https://una-huella-que-sigue.vercel.app/sitemap.xml
+
 # No hay secciones privadas ni rutas de administración.
