@@ -89,15 +89,19 @@ También se puede abrir `index.html` directamente en el navegador: el sitio no u
 
 ```
 .
-├── index.html              # Las nueve secciones
-├── assets/
-│   ├── css/styles.css      # Sistema de diseño + componentes + responsive
-│   ├── js/main.js          # Menú, progreso, reveals, parallax, galería
-│   └── img/favicon.svg     # Favicon vectorial original
+├── index.html    # Las nueve secciones
+├── styles.css    # Sistema de diseño + componentes + responsive
+├── main.js       # Menú, progreso, reveals, parallax, galería
+├── favicon.svg   # Favicon vectorial original
+├── sitemap.xml   # Mapa del sitio (una sola URL)
+├── robots.txt    # Permisos de indexación + referencia al sitemap
 ├── README.md
-├── robots.txt
 └── .gitignore
 ```
+
+> Nota: la carpeta `assets/` (donde vivían CSS, JS y favicon en la versión anterior)
+> quedó localmente con archivos marcadores sin uso. El sitio carga **todo desde la raíz**;
+> en el repositorio esa carpeta ya no existe.
 
 ---
 
