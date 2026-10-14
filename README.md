@@ -2,14 +2,14 @@
 
 **La vida, el compromiso y el legado de Claudio «Pocho» Lepratti**
 
-Landing page narrativa, educativa y responsive, realizada como proyecto escolar por la
+Landing page documental, educativa y responsive, realizada como proyecto escolar por la
 **divisional 5.º B de la Escuela N.º 15 Claudio Lepratti**.
 
 ---
 
 ## Qué es
 
-Una experiencia web editorial de ocho secciones que recorre la biografía de Claudio Hugo
+Un documental digital de nueve secciones que recorre la biografía de Claudio Hugo
 Lepratti (Concepción del Uruguay, 27 de febrero de 1966 — Rosario, 19 de diciembre de 2001)
 con criterio histórico: cada dato está verificado, las fuentes están enlazadas al final y los
 hechos documentados se separan explícitamente de las interpretaciones.
@@ -23,7 +23,17 @@ hechos documentados se separan explícitamente de las interpretaciones.
 5. Obras solidarias y compromiso social
 6. Su muerte (19 de diciembre de 2001)
 7. Su legado: una huella que sigue
-8. Fuentes y créditos
+8. Fuentes históricas
+9. Créditos de 5.º B
+
+---
+
+## Dirección visual
+
+Editorial contemporáneo, sin estética de libro: fondo marfil, azul profundo como color
+principal, terracota como acento y texto grafito. Tipografías **Fraunces** (títulos) e
+**Inter** (texto), generosos espacios entre secciones, fotografías grandes e integradas y
+composiciones alternadas para dar ritmo.
 
 ---
 
@@ -34,13 +44,27 @@ hechos documentados se separan explícitamente de las interpretaciones.
 | Estructura | HTML5 semántico (`section`, `nav`, `figure`, `blockquote`, `footer`) |
 | Estilos | CSS moderno: custom properties, grid, clamp(), media queries |
 | Comportamiento | JavaScript sin dependencias (IIFE clásica, sin módulos ES) |
-| Tipografías | Playfair Display, Source Serif 4 e Inter (Google Fonts, licencia OFL) |
-| Imágenes | Fotografías de Wikimedia Commons bajo CC BY-SA 4.0 + gráficos originales |
+| Tipografías | Fraunces e Inter (Google Fonts, licencia OFL) |
+| Imágenes | Seis fotografías de Wikimedia Commons bajo CC BY-SA 4.0 + gráficos originales |
 | Implantación | Sitio estático, sin backend ni base de datos |
 
 No hay framework ni paso de compilación: el repositorio **es** el sitio. Esto reduce el
 tiempo de carga, elimina dependencias y hace que el despliegue en Vercel sea de
 configuración cero.
+
+---
+
+## Animaciones
+
+- Entrada escalonada de la portada.
+- Aparición de secciones al entrar en el área visible (IntersectionObserver).
+- Desplazamiento parcial de las fotografías grandes al hacer scroll.
+- Barra de progreso de lectura y cabecera que se solidifica al desplazar.
+- Línea de cronología que se dibuja según el avance de lectura.
+- Galería de memoria con transición entre fotografías, miniaturas y teclado.
+- Navegación suave con desplazamiento compensado y sección activa resaltada.
+
+Todas se desactivan con `prefers-reduced-motion: reduce`.
 
 ---
 
@@ -65,12 +89,13 @@ También se puede abrir `index.html` directamente en el navegador: el sitio no u
 
 ```
 .
-├── index.html              # Las ocho secciones
+├── index.html              # Las nueve secciones
 ├── assets/
 │   ├── css/styles.css      # Sistema de diseño + componentes + responsive
-│   ├── js/main.js          # Menú, progreso, reveals, navegación activa
+│   ├── js/main.js          # Menú, progreso, reveals, parallax, galería
 │   └── img/favicon.svg     # Favicon vectorial original
 ├── README.md
+├── robots.txt
 └── .gitignore
 ```
 
@@ -80,28 +105,35 @@ También se puede abrir `index.html` directamente en el navegador: el sitio no u
 
 - HTML semántico y orden de encabezados correcto.
 - Navegación por teclado con *skip link* y foco visible.
-- `alt` descriptivo en todas las imágenes.
+- `alt` descriptivo en todas las imágenes; las de contexto están declaradas como tales.
 - Menú móvil con `aria-expanded`, cierre con `Escape` y bloqueo del scroll.
+- Galería con `aria-live` en el pie de foto y controles con nombre accesible.
 - Barra de progreso de lectura y botón de «volver al principio».
 - Respeta `prefers-reduced-motion`: sin animaciones ni desplazamiento suave para quien lo pida.
 - `loading="lazy"` y `decoding="async"` en todas las imágenes de contenido; la de portada usa `fetchpriority="high"`.
 - Sin desplazamiento horizontal en ningún ancho de pantalla.
-- Diseño adaptable a escritorio, notebook, tablet y celular.
+- Diseño adaptable a escritorio, tablet y celular.
 
 ---
 
 ## Imágenes y derechos
 
 No existe ninguna fotografía libre de Pocho Lepratti. Para no infringir derechos de autor ni
-presentar ilustraciones como documentos históricos, la página usa cuatro fotografías de
-murales y esténciles con licencia libre (CC BY-SA 4.0, con atribución en la sección 8) y
-gráficos originales creados para el proyecto.
+presentar ilustraciones como documentos históricos, la página usa **seis fotografías con
+licencia libre (CC BY-SA 4.0, con atribución en la sección 9)**: cuatro expresiones de
+memoria colectiva (murales y esténciles) y dos imágenes de contexto de las ciudades donde
+vivió, más gráficos originales creados para el proyecto.
 
 ---
 
 ## Producción
 
-**URL de Vercel:** _se completa al publicar._
+**URL de Vercel:** https://una-huella-que-sigue.vercel.app
+
+**Repositorio:** https://github.com/buzzentt-sudo/una-huella-que-sigue
+
+El despliegue está conectado al repositorio: cada publicación en la rama `main` genera una
+nueva versión automática en Vercel.
 
 ---
 
