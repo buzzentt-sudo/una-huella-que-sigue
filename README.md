@@ -45,7 +45,7 @@ composiciones alternadas para dar ritmo.
 | Estilos | CSS moderno: custom properties, grid, clamp(), media queries |
 | Comportamiento | JavaScript sin dependencias (IIFE clásica, sin módulos ES) |
 | Tipografías | Fraunces e Inter (Google Fonts, licencia OFL) |
-| Imágenes | Seis fotografías de Wikimedia Commons bajo CC BY-SA 4.0 + gráficos originales |
+| Imágenes | Trece fotografías (ocho de Wikimedia Commons bajo CC BY-SA 4.0 y 3.0, cinco cedidas por la escuela) + gráficos originales |
 | Implantación | Sitio estático, sin backend ni base de datos |
 
 No hay framework ni paso de compilación: el repositorio **es** el sitio. Esto reduce el
@@ -123,10 +123,12 @@ También se puede abrir `index.html` directamente en el navegador: el sitio no u
 ## Imágenes y derechos
 
 No existe ninguna fotografía libre de Pocho Lepratti. Para no infringir derechos de autor ni
-presentar ilustraciones como documentos históricos, la página usa **seis fotografías con
-licencia libre (CC BY-SA 4.0, con atribución en la sección 9)**: cuatro expresiones de
-memoria colectiva (murales y esténciles) y dos imágenes de contexto de las ciudades donde
-vivió, más gráficos originales creados para el proyecto.
+presentar ilustraciones como documentos históricos, la página usa **trece fotografías**, con
+al menos una en cada sección del relato: ocho con licencia libre (CC BY-SA 4.0 y 3.0, con
+atribución en la sección 8) y **cinco cedidas al proyecto** por la Escuela N.º 15 y por sus
+autores —la fotografía de Pocho de la portada, su escuela primaria, la Biblioteca Popular
+«Pocho Lepratti», la escuela del curso y una foto del alumnado—, más gráficos originales
+creados para el proyecto.
 
 ---
 

@@ -233,6 +233,12 @@
         alt: 'Mural con la leyenda «Pocho vive» pintado en la pared del Hospital Alvear, en el barrio de La Paternal, Buenos Aires.',
         title: 'Mural «Pocho vive», Hospital Alvear',
         desc: 'Buenos Aires, 2015. Foto: Jppochettino · <a href="https://commons.wikimedia.org/wiki/File:POCHO_VIVE.jpeg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · CC BY-SA 4.0'
+      },
+      {
+        src: 'biblioteca-pocho-lepratti.jpg',
+        alt: 'Fachada de la Biblioteca Popular «Pocho Lepratti»: cartel de la biblioteca, puerta verde y un mural de un ángel que pedala una bicicleta junto a la frase «Pocho vive».',
+        title: 'Biblioteca Popular «Pocho Lepratti»',
+        desc: 'Rosario, barrio Tablada · fundada el 18 de octubre de 2002 en su casa. Foto: Santiago Fraga (ConclusioN), cedida al proyecto'
       }
     ];
 
